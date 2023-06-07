@@ -10,6 +10,14 @@ public class hashSet {
         maintains the insertion order of the elements.
          */
 
+        //this a normal array
+        int[] array={1,2,6,8};
+
+        for(int k=0;k<array.length;k++) {
+            System.out.println(array[k]);
+        }
+
+
         //naturel order for integers
         HashSet<Integer> numbers=new HashSet<>();
         numbers.add(7);
@@ -45,6 +53,36 @@ public class hashSet {
 
         for(String i:name)
             System.out.println(i);
+//............................................................................................................
+
+           HashSet<String> countries = new HashSet<>();
+
+                // Adding elements to HashSet
+                countries.add("USA");
+                countries.add("Canada");
+                countries.add("India");
+
+                //doesn't accept duplicate
+                countries.add("USA");
+
+                // Removing an element
+                countries.remove("Canada");
+
+                // Checking if an element exists
+                boolean containsIndia = countries.contains("India");
+                System.out.println("Contains India: " + containsIndia);
+
+                // Size of HashSet
+                int size = countries.size();
+                System.out.println("Size of HashSet: " + size);
+
+              // Iterating over HashSet
+                  System.out.println("All countries:");
+                  for (String country : countries) {
+                    System.out.println(country);
+                      }
+
+
 
     }
 }

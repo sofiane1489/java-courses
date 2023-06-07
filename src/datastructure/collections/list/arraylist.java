@@ -1,12 +1,13 @@
 package datastructure.collections.list;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class arraylist {
     public static void main(String[] args) {
 
 //array without a type(it support integer,String and others in the same array)
-        ArrayList list= new ArrayList();// this is called generic one
+        ArrayList list= new ArrayList<>();// this is called generic one
         list.add(20);
         list.add(30);
         list.add("age");
@@ -55,6 +56,36 @@ public class arraylist {
         }
         //Check If an Item Exists
         System.out.println(numbers.contains(3));
+
+//...............................................................................................................
+                ArrayList<String> fruits = new ArrayList<>();
+
+                // Adding elements to ArrayList
+                fruits.add("Apple");
+                fruits.add("Banana");
+                fruits.add("Orange");
+
+                // Accessing elements by index
+                String firstFruit = fruits.get(0);
+                System.out.println("First fruit: " + firstFruit);
+
+                // Iterating over ArrayList
+                System.out.println("All fruits:");
+                for (String fruit : fruits) {
+                    System.out.println(fruit);
+                }
+
+                // Removing an element
+                fruits.remove("Banana");
+
+                // Checking if an element exists
+                boolean containsOrange = fruits.contains("Orange");
+                System.out.println("Contains Orange: " + containsOrange);
+
+                // Size of ArrayList
+                int size = fruits.size();
+                System.out.println("Size of ArrayList: " + size);
+
 
     }
 }
