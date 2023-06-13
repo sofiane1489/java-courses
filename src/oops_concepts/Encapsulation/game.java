@@ -1,4 +1,7 @@
 package oops_concepts.Encapsulation;
+
+import javax.swing.plaf.metal.MetalButtonUI;
+
 public class game {
 
    int score1;
@@ -37,6 +40,8 @@ public class game {
 
 //...................................................................................
 
+    int number=25;
+
     private String name; // private = restricted access
 
     // Getter
@@ -49,8 +54,33 @@ public class game {
         this.name = newName;
     }
 
+//..........................................................................................................
 
+   private String grade;
 
-//...................................................................................................
+    public String getGrade() {
+        if(grade =="70"){
+           grade="C";
+           return grade;
+        }else if(grade=="80"){
+            grade="B";
+            return grade;
+        }else if(grade=="90"){
+            grade="A";
+            return grade;
+        }else
+        return grade="F";
+    }
+
+    public void setGrade(String rate) {
+        this.grade = rate;
+    }
+    //...........................................................................................................
+
+    public static void main(String[] args) {
+        game ga=new game();
+
+        System.out.println(ga.name="jo");
+    }
 
 }

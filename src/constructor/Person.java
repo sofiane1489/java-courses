@@ -1,6 +1,7 @@
 package constructor;
 
 public class Person {
+
   private String name;
   private int age;
 
@@ -26,6 +27,7 @@ public class Person {
         // Accessing object properties using getter methods
         String name = person.getName();
         int age = person.getAge();
+
 
 //       String n= person.name;
 //        int a=person.age;

@@ -16,6 +16,11 @@ public class usegame {
         tenis.setName("john");
         System.out.println(tenis.getName());
 
+        tenis.setGrade("60");
+        System.out.println(tenis.getGrade());
+
+ //...........................................................................
+
     }
 
 }

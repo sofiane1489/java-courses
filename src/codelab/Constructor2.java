@@ -1,5 +1,5 @@
 package codelab;
-public class method2 {
+public class Constructor2 {
 	
 	public String phone;
 	public String computer;
@@ -11,14 +11,18 @@ public class method2 {
 	public String car;
 	public  String color;
 	 //Create a class constructor for the Main class
-	    public method2(String mycolor,String mycar,int mymodelyear) 
+	    public Constructor2(String mycolor, String mycar, int mymodelyear)
 	        {
 	    	  modelyear=mymodelyear;
 		     car=mycar; 
 		     color= mycolor;
 	        }
+
+			public void myCar(){
+				System.out.println("my car is "+car+" and the model year is "+modelyear +" and the color is "+color);
+			}
 	     
-	   public  method2(int phonememory,String myphone,String mycomputer)
+	   public Constructor2(int phonememory, String myphone, String mycomputer)
 	       {
 	    	  memory =phonememory;
 	    	    phone =myphone;
